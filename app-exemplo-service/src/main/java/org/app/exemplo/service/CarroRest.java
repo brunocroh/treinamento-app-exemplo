@@ -21,6 +21,8 @@ public class CarroRest {
 	
 	/**
 	 * RequestMethod tem opcoes para GET, POST, PUT e DELETE
+	 * nao se utilizaria /listar ou /adicicionar. O verbo (GET, PUT, etc) ja indicaria 
+	 * o significado daquela operacao
 	 */
 	@RequestMapping(name = "/listar", method = RequestMethod.GET ) 
 	public @ResponseBody List<Carro> getCarros() {
